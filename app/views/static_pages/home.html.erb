@@ -1,8 +1,15 @@
 <%provide(:title,"主页")%>
 
-<h1> 直播网 </h1>
 
-  <%= link_to image_tag("football.png", alt: "football"),'#' %>
+<div class="center jumbotron">
+      <h1>欢迎来到直播预告网</h1>
+      
+      <%= link_to "立即注册", signup_path, class: "btn btn-lg btn-primary" %>   <!-- btn-primary:表示按钮的操作相对比较重要 -->
+     </div>
+
+
+
+  <%= link_to image_tag("football.png", alt: "football"),'#' %>  <!--使用image_tag辅助方法,rails会使用Asset Pipeline自动在app/assets/images/文件夹中寻找图片 -->
   <%= link_to image_tag("basketball.png", alt: "basketball"),'#' %>
   <%= link_to image_tag("sc.png", alt: "sc"),'#' %>
   <%= link_to image_tag("dota.png", alt: "dota"),'#' %>

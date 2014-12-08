@@ -1,0 +1,12 @@
+ <header class="navbar navbar-fixed-top navbar-inverse">  <!--header标签表明这个元素应该放在页面的顶部. navbar:导航条; navbar-fixed-top:导航条固定在页面顶部; navbar-inverse:黑底白色;  -->
+          <div class="container">   <!-- class="container":在页面中实现固定宽度,居中的布局 -->
+            <%= link_to "web app", root_path, id: "logo" %>
+            <nav>
+              <ul class="nav navbar-nav pull-right">    <!-- nav:表明这些链接是导航; ul:无序列表标签; pull-right:把元素浮动到容器右侧 -->
+                <li><%= link_to "主页",   root_path %></li>    <!-- li:列表项目标签-->
+                <li><%= link_to "帮助",   help_path %></li>
+                <li><%= link_to "登录",   '#' %></li>
+			</ul> 
+			</nav>
+          </div>
+</header>
