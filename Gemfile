@@ -9,7 +9,7 @@ gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.1.2'
 gem 'turbolinks', '2.3.0'
 gem 'jbuilder', '2.1.3'
-
+gem 'arel', '6.0.0.beta2'
 gem 'bcrypt' , '3.1.7'
 
 gem 'sdoc', '0.4.0', group: :doc
