@@ -11,7 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141210121101) do
+ActiveRecord::Schema.define(version: 20150120113628) do
+
+  create_table "dota", force: true do |t|
+    t.date     "date"
+    t.time     "time"
+    t.string   "teama"
+    t.string   "teamb"
+    t.string   "live"
+    t.string   "match_name"
+    t.string   "word_live"
+    t.string   "score_live"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "soccers", force: true do |t|
+    t.date     "date"
+    t.time     "time"
+    t.string   "teama"
+    t.string   "teamb"
+    t.string   "live"
+    t.string   "match_name"
+    t.string   "word_live"
+    t.string   "score_live"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"

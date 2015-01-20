@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'soccer' => 'match_pages#soccer'
+
+  get 'dota' => 'match_pages#dota'
+
   get 'signup' => 'users#new'
 
   root 'static_pages#home'
